@@ -1,0 +1,4 @@
+D:\SteamLibrary\steamapps\common\Pathfinder Kingmaker\pathfinder-mods-1.0.2.1\EldritchArcana\obj\Debug\net461\EldritchArcana.csprojResolveAssemblyReference.cache
+D:\SteamLibrary\steamapps\common\Pathfinder Kingmaker\pathfinder-mods-1.0.2.1\EldritchArcana\obj\Debug\net461\EldritchArcana.Properties.Resources.resources
+D:\SteamLibrary\steamapps\common\Pathfinder Kingmaker\pathfinder-mods-1.0.2.1\EldritchArcana\obj\Debug\net461\EldritchArcana.csproj.GenerateResource.Cache
+D:\SteamLibrary\steamapps\common\Pathfinder Kingmaker\pathfinder-mods-1.0.2.1\EldritchArcana\obj\Debug\net461\EldritchArcana.AssemblyInfo.cs
