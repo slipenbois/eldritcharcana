@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <DebugType>Full</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Info.json" />
+    <Content Include="Feats\EldritchHeritage.cs" />
+    <Content Include="FavoredClassBonus.cs" />
+    <Content Include="Helpers.cs" />
+    <Content Include="Main.cs" />
+    <Content Include="Oracle\Oracle.cs" />
+    <Content Include="Oracle\DragonMystery.cs" />
+    <Content Include="Oracle\OracleCurses.cs" />
+    <Content Include="Oracle\BattleMystery.cs" />
+    <Content Include="Oracle\OracleArchetypes.cs" />
+    <Content Include="Oracle\FlameMystery.cs" />
+    <Content Include="Oracle\LifeMystery.cs" />
+    <Content Include="Spells\ExperimentalSpells.cs" />
+    <Content Include="Oracle\HeavensMystery.cs" />
+    <Content Include="Oracle\TimeMystery.cs" />
+    <Content Include="Spells\Wish.cs" />
+    <Content Include="Feats\MagicFeats.cs" />
+    <Content Include="Feats\Metamagic.cs" />
+    <Content Include="Feats\PrestigiousSpellcaster.cs" />
+    <Content Include="Repository.json" />
+    <Content Include="Sorcerer\Crossblooded.cs" />
+    <Content Include="Sorcerer\Bloodlines.cs" />
+    <Content Include="Testing\SaveCompatibility.cs" />
+    <Content Include="Testing\baseline_assets.txt" />
+    <Content Include="Spells\PrestigiousSpellcaster.cs" />
+    <Content Include="Spells\Metamagic.cs" />
+    <Content Include="Spells\MagicFeats.cs" />
+    <Content Include="Spells\TimeStop.cs" />
+    <Content Include="Spells\Fly.cs" />
+    <Content Include="Spells\FireSpells.cs" />
+    <Content Include="Spells\Spells.cs" />
+    <Content Include="Spells\KnockDetectSecrets.cs" />
+    <Content Include="Spells\KnockAndDetectSecrets.cs" />
+    <Content Include="Spells\DismissSpell.cs" />
+    <Content Include="Spells\ReplaceSpell.cs" />
+    <Content Include="Prestige\ArcaneSavant.cs" />
+    <Content Include="CHANGELOG.md" />
+  </ItemGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    xcopy /y "D:\SteamLibrary\steamapps\common\Pathfinder Kingmaker\pathfinder-mods-1.0.2.1\\EldritchArcana\bin\Debug\net471\EldritchArcana.dll" "D:\SteamLibrary\steamapps\common\Pathfinder Kingmaker\Mods\EldritchArcana"
+    xcopy /y "D:\SteamLibrary\steamapps\common\Pathfinder Kingmaker\pathfinder-mods-1.0.2.1\\EldritchArcana\Info.json" "D:\SteamLibrary\steamapps\common\Pathfinder Kingmaker\Mods\EldritchArcana"
+    xcopy /y "D:\SteamLibrary\steamapps\common\Pathfinder Kingmaker\pathfinder-mods-1.0.2.1\\EldritchArcana\Testing\baseline_assets.txt" "D:\SteamLibrary\steamapps\common\Pathfinder Kingmaker\Mods\EldritchArcana"
+    xcopy /y "D:\SteamLibrary\steamapps\common\Pathfinder Kingmaker\pathfinder-mods-1.0.2.1\\EldritchArcana\CHANGELOG.md" "D:\SteamLibrary\steamapps\common\Pathfinder Kingmaker\Mods\EldritchArcana"
+    ::xcopy /y "D:\SteamLibrary\steamapps\common\Pathfinder Kingmaker\pathfinder-mods-1.0.2.1\\EldritchArcana\Images_sprites" "D:\SteamLibrary\steamapps\common\Pathfinder Kingmaker\Mods\EldritchArcana\sprites"</PostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony12">
+      <HintPath>..\..\Kingmaker_Data\Managed\0Harmony12.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\Kingmaker_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\Kingmaker_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>..\..\Kingmaker_Data\Managed\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Kingmaker_Data\Managed\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\Kingmaker_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Kingmaker_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\Kingmaker_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\Kingmaker_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>..\..\Kingmaker_Data\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\Kingmaker_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Kingmaker_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityModManager">
+      <HintPath>..\..\..\UnityModManager\UnityModManager.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
+  
