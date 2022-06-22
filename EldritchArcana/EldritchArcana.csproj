@@ -52,7 +52,7 @@
     ::xcopy /y "D:\SteamLibrary\steamapps\common\Pathfinder Kingmaker\pathfinder-mods-1.0.2.1\\EldritchArcana\Images_sprites" "D:\SteamLibrary\steamapps\common\Pathfinder Kingmaker\Mods\EldritchArcana\sprites"</PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="0Harmony12">
